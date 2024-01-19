@@ -7,6 +7,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL_Files", "SQL_Files", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MQTT_Grafana", "MQTT_Grafana\MQTT_Grafana.csproj", "{5F3E1E20-395D-48F5-9F91-FCEF53D378F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{C04DF6AF-98D8-4148-8396-CE87A0FD7801}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{BE0E79DD-6227-4A6F-AF34-60487902144D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +21,14 @@ Global
 		{5F3E1E20-395D-48F5-9F91-FCEF53D378F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F3E1E20-395D-48F5-9F91-FCEF53D378F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F3E1E20-395D-48F5-9F91-FCEF53D378F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C04DF6AF-98D8-4148-8396-CE87A0FD7801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C04DF6AF-98D8-4148-8396-CE87A0FD7801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C04DF6AF-98D8-4148-8396-CE87A0FD7801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C04DF6AF-98D8-4148-8396-CE87A0FD7801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE0E79DD-6227-4A6F-AF34-60487902144D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE0E79DD-6227-4A6F-AF34-60487902144D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE0E79DD-6227-4A6F-AF34-60487902144D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE0E79DD-6227-4A6F-AF34-60487902144D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
