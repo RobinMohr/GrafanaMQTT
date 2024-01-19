@@ -1,4 +1,4 @@
-namespace MQTT_SQL
+namespace MQTT_Grafana
 {
     public class WeatherForecast
     {

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace SQL_Grafana.Controllers
+namespace MQTT_Grafana.Controllers
 {
     [ApiController]
     [Route("[controller]")]

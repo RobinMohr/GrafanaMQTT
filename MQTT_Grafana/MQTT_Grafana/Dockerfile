@@ -7,16 +7,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["SQL_Grafana/SQL_Grafana.csproj", "SQL_Grafana/"]
-RUN dotnet restore "SQL_Grafana/SQL_Grafana.csproj"
+COPY ["MQTT_Grafana/MQTT_Grafana.csproj", "MQTT_Grafana/"]
+RUN dotnet restore "MQTT_Grafana/MQTT_Grafana.csproj"
 COPY . .
-WORKDIR "/src/SQL_Grafana"
-RUN dotnet build "SQL_Grafana.csproj" -c Release -o /app/build
+WORKDIR "/src/MQTT_Grafana"
+RUN dotnet build "MQTT_Grafana.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "SQL_Grafana.csproj" -c Release -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "MQTT_Grafana.csproj" -c Release -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "SQL_Grafana.dll"]
+ENTRYPOINT ["dotnet", "MQTT_Grafana.dll"]

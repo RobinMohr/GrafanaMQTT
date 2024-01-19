@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "SQL_Grafana": {
+    "MQTT_Grafana": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "swagger",
@@ -8,7 +8,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
       "dotnetRunMessages": true,
-      "applicationUrl": "https://localhost:7252;http://localhost:5252"
+      "applicationUrl": "https://localhost:7070;http://localhost:5071"
     },
     "IIS Express": {
       "commandName": "IISExpress",
@@ -31,8 +31,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:55367",
-      "sslPort": 44383
+      "applicationUrl": "http://localhost:16099",
+      "sslPort": 44323
     }
   }
 }

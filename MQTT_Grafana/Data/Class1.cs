@@ -1,4 +1,4 @@
-﻿namespace SQL_Grafana_Busines
+﻿namespace Data
 {
     public class Class1
     {
