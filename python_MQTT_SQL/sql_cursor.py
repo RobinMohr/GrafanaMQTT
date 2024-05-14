@@ -13,7 +13,7 @@ class SQL_Cursor:
 
     def create_tables_if_not_exist(self):
         all_tables = numpy.array(sorted([x[0] for x in self.cursor.execute("SELECT name FROM sysobjects WHERE xtype = 'U' and name != 'sysdiagrams'").fetchall()]))
-        wanted_tables = numpy.array(sorted(["Unit","SensorType","SensorLocation","Sensor","SensorEntry","Log","Trigger"]))
+        wanted_tables = numpy.array(sorted(["Unit","SensorType","SensorLocation","Sensor","SensorEntry","Log"]))
         missing_tables = numpy.setdiff1d(wanted_tables,all_tables)
         for missing_table in missing_tables:
             file = open(f"{os.getcwd()}\\SQL_Files\\{missing_table}.sql", "r")
@@ -52,7 +52,7 @@ class SQL_Cursor:
         return self._connection
     
     @property
-    def cursor(self)->pypyodbc.Cursor:
+    def cursor(self) -> pypyodbc.Cursor:
         if self._cursor is None:
             self._cursor = self.connection.cursor()
         return self._cursor
